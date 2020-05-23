@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/apple/WorkSpace/Projects/Jitsi/jitsi-meet/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/sbakhtian/Dev2/jitsiAndroid/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/e2c3e2655eea20368416b6ff8d789926/res/values-v24/values-v24.xml",
+                    "source": "/Users/sbakhtian/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/6e33425b2793dbef71fd11e0a64e53b0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/eb52d7ec17716037eb16b34b4e98bc6a/res/values-v24/values-v24.xml",
+                    "source": "/Users/sbakhtian/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/29d007e8ca8d1149663ad2f82b2294b1/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

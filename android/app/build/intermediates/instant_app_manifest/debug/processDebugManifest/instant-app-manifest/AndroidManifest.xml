@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.jitsi.meet"
     android:targetSandboxVersion="2"
-    android:versionCode="4385738"
+    android:versionCode="4394263"
     android:versionName="20.3.0" >
 
     <uses-sdk

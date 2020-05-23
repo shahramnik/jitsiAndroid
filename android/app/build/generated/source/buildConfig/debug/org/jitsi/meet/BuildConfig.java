@@ -8,7 +8,7 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "org.jitsi.meet";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 4385738;
+  public static final int VERSION_CODE = 4394263;
   public static final String VERSION_NAME = "20.3.0";
   // Fields from build type: debug
   public static final boolean GOOGLE_SERVICES_ENABLED = false;

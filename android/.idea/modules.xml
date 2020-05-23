@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-community/async-storage/android/android-react-native-community-async-storage.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-community/async-storage/android/android-react-native-community-async-storage.iml" group="jitsi-meet/react-native-community-async-storage" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-community/netinfo/android/android-react-native-community_netinfo.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-community/netinfo/android/android-react-native-community_netinfo.iml" group="jitsi-meet/react-native-community_netinfo" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-community/google-signin/android/android-react-native-google-signin.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-community/google-signin/android/android-react-native-google-signin.iml" group="jitsi-meet/react-native-google-signin" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="jitsi-meet/app" />
       <module fileurl="file://$PROJECT_DIR$/jitsi-meet.iml" filepath="$PROJECT_DIR$/jitsi-meet.iml" group="jitsi-meet" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-background-timer/android/react-native-background-timer.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-background-timer/android/react-native-background-timer.iml" group="jitsi-meet/react-native-background-timer" />
