@@ -1,0 +1,1066 @@
+{
+	"info": {
+		"_postman_id": "47c8ba63-e2d3-48d6-b4fd-1943fdcbc504",
+		"name": "fyi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/master",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/master",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"master"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userSignnp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"full_name\": \"rakesh palotra\",\n\t\"email\": \"rakesh.palotra@gmail.com\",\n\t\"password\": \"rakesh\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/userSignup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"userSignup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "emailVerification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email_address\": \"kappa8815@gmail.com\",\n\t\"email_verification_code\": 736772\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/emailVerification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"emailVerification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resendEmailVerificationCode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email_address\": \"kappa8815@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/resendEmailVerificationCode",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"resendEmailVerificationCode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "device_unique_id",
+						"value": "fds",
+						"type": "text"
+					},
+					{
+						"key": "device_type",
+						"value": "gf",
+						"type": "text"
+					},
+					{
+						"key": "device_push_token",
+						"value": "gfd",
+						"type": "text"
+					},
+					{
+						"key": "device_os_detail",
+						"value": "f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"kappa8815@gmail.com\",\n\t\"password\": \"kapil\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "1250af0144546dd370fa5849a0f6fde6b629e77e362d80e81f268a9833028414",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/user/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgetPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"kappa8815@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/forgetPassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"forgetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "confirmForgetPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"kappa8815@gmail.com\",\n    \"otp\": 482226 ,\n    \"new_password\": \"somepass\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/confirmForgetPassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"confirmForgetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserListing",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "2e70329b9d843a96595f626cdb5fecc8722659fc42546569e2ae436d43b44293",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/user/getUserListing/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"getUserListing",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "2e70329b9d843a96595f626cdb5fecc8722659fc42546569e2ae436d43b44293",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"full_name\": \"kapil\",\n    \"email\":\"kp96.info@gmail.com\",\n    \"status\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/updateUser/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"updateUser",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/getUserProfile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "134bfe3e71163d80e19ac8f5cbfe0066f55f78f408e95dc6de520e7dcf6875fa",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/getUserProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"getUserProfile"
+					],
+					"query": [
+						{
+							"key": "user_login_token",
+							"value": "60cc84bc1eefdd1da8179e2a084d26fe8c0dbce337c8ee25c8426b48c5601ac7",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/changePassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "2740c4fcab07d05d66ee2f2bbbbb4c95ecfacd55b3a504e88f2ae31cd3642fd4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": \"some12\",\n\t\"old_password\" : \"kapil\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/changePassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/getProfessionals",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "a14891ebf6a16e749d5bb6e3366aa8249caeccda67fa3abb32c0eefb877584c9",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"limit\": 40,\n\t\"pageNumber\": 3,\n\t\"specialisation\": [2, 3]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/getProfessionals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"getProfessionals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/getClients",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"limit\": 40,\n\t\"pageNumber\": 3,\n\t\"specialisation\": [2, 3]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/getClients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"getClients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "a14891ebf6a16e749d5bb6e3366aa8249caeccda67fa3abb32c0eefb877584c9",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "photoType",
+							"value": "certification_image",
+							"type": "text"
+						},
+						{
+							"key": "certification_name",
+							"value": "fsdff",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "1b5a94bb82828cd20b0d11717f2828abbdfbc32e3fd51e0335550ae7cd32a1da",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "1b5a94bb82828cd20b0d11717f2828abbdfbc32e3fd51e0335550ae7cd32a1da",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userInfo\" : {\n\t\t\"date_of_birth\": \"1995-12-23\",\n\t\t\"phone_number\": \"9988776600\"\n\t},\n\t\"user_ceritication\": {\n\t\t\t\"certification_name\": \"sdfn\",\n\t\t\t\"certification_image\": \"hgjkl\"\n\t},\n\t\"profession\": {\n\t\t\"profession_id\": \"1\"\n\t},\n\t\"user_Profession_Specialization\": {\n\t\t\"user_profession_id\": \"1\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/country",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "361cfc95d575ddaab0e6e79259f9056b1c6e39b0ddd37f02d85ac9d1b7ebcf69",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"country_name\": \"Brazil\",\n\t\"country_code\": \"BZ\",\n\t\"remark\": \"Brazil\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/country",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"country"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/profession",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"profession_name\": \"fss\",\n\t\"remark\": \"fmlkds\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/profession",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"profession"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/profession/delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"profession_id\": 18\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/profession/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"profession",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/profession/getAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/profession/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"profession",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/profession/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"profession_id\": 14,\n\t\"profession_name\": \"fsd\",\n\t\"remark\": \"jsfdkfndsjfk\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/profession/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"profession",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/professionSpecialization",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"specialization_name\": \"fhdskjfl\",\n\t\"profession_id\": \"1\",\n\t\"remark\": \"fjdksl\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/professionSpecialization",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"professionSpecialization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/country/delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"country_id\": 233\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/country/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"country",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/country/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"country_id\": 245,\n\t\"country_name\": \"fssfds\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/country/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"country",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/country/getAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/country/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"country",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/state",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"state_code\": \"MH\",\n\t\"state_name\": \"fsd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/state",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/state/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"state_id\": 2,\n\t\"country_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/state/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"state",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/city/getAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/city/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"city",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/country/getCountries",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/country/getCountries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"country",
+						"getCountries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/state/getStatesInfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"country_id\" :233\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/state/getStatesInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"state",
+						"getStatesInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/city",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user_login_token",
+						"value": "49b2321604587eb90d4a9f4e25e13e938c716629d7bde93f54e3936ee7b1e5cd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"country_id\": \"1\",\n\t\"city_name\":\"fsdfds\",\n\t\"state_id\": 1\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/city",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"city"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,61 @@
+PROBLEMS
+
+9-6-2020
+1. need some work in changePassword API need to add encryption decryption 
+    functions , currently API not working 
+
+2.
+
+
+
+APIS DONE
+
+8-6-2020
+1. userRegistration 
+
+9-6-2020
+2. emailVerfication
+3. resendEmailVerification
+4. getUserProfile
+5. login
+
+
+THOUGHTS 
+1. for forget password --> 1. resendEmailVerification
+                           2. confirmForgetPassword
+
+
+
+
+SIGN UP-------->
+{
+    "responseCode": 1,
+    "message": "Otp Sent to your mail",
+    "data": {
+        "user_id": 1,
+        "full_name": "kapil palotra",
+        "user_name": "kappa8815@gmail.com",
+        "role_id": 2,
+        "status": 1,
+        "updatedAt": "2020-06-09T12:32:17.652Z",
+        "createdAt": "2020-06-09T12:32:17.652Z"
+    }
+}
+
+
+SIGN IN ------------>
+{
+    "responseCode": 1,
+    "message": "Login successfully",
+    "user_info": {
+        "user_id": 1,
+        "full_name": "kapil palotra",
+        "status": 1,
+        "role_id": 2,
+        "token": "479fb86189b2106e3dc1425fdddfecc19f3ceb6859ced636cc58a462110cc1e0",
+        "updatedAt": "2020-06-09T12:42:54.701Z",
+        "createdAt": "2020-06-09T12:42:54.701Z",
+        "user_name": "kappa8815@gmail.com"
+    }
+}
+
