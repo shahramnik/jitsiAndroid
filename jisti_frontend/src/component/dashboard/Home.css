@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.nav-item {
+  right: 60%;
+}
+
+.spinner-border {
+  margin-top: 15%;
+  margin-left: 45%;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 20% !important;
+  width: 45%;
+}
+
+.react-bootstrap-table {
+  margin: 10px;
+}
+
+.form-control {
+  width: 20%;
+  float: right;
+  margin: 28px;
+}
+
+.modal-header .close {
+  min-width: 10px;
+}
+
+.modal-content {
+  width: 70%;
+}
+
+.deleteUser modal-content {
+  width: 86% !important;
+}
+
+input {
+  width: 90%;
+  margin-top: 0 !important;
+  margin-bottom: 20px !important;
+}
+.labelfullname label {
+  margin-bottom: 0px;
+}
+
+#search-bar-0 {
+  margin-top: 29px !important;
+}
+
+label {
+  margin-left: 10px;
+}
+
+.fullNameValue {
+  margin-left: 10px;
+}
+
+.emailAddress {
+  margin-bottom: 0px !important;
+}
+
+.emailValue {
+  margin-left: 10px;
+}
+
+.forEmail {
+  margin-top: 15px;
+}
+
+/* .pageDropDown {
+  min-width: 50% !important;
+} */
